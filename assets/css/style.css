@@ -1610,9 +1610,11 @@ ul.nav--lg-side {
 .bg-contact::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   background-size: cover;
   filter: grayscale(100%);
   opacity: 20%;
@@ -1631,17 +1633,18 @@ ul.nav--lg-side {
 } */
 
 .footer-logo {
-  height: 48px;
+  height: 80px;
   margin-bottom: 20px;
+  margin-left: -15px;
 }
 
 #footer p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
 }
 
 #footer .copyright {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 ::-webkit-scrollbar {
@@ -1703,8 +1706,10 @@ ul.nav--lg-side {
 }
 
 .gallery-img:hover {
-  -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(250%) contrast(2);
-  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(250%) contrast(0.8);
+  -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%)
+    hue-rotate(-50deg) saturate(250%) contrast(2);
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg)
+    saturate(250%) contrast(0.8);
 }
 
 .close {
@@ -1728,11 +1733,65 @@ span.fas {
 }
 
 .ico-social {
+  display: flex;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #1f1f1f;
-  display: flex;
+  border: 1px solid #ffffff;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
+}
+
+/* footer  */
+
+.block-42__li-heading {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.block-42__li {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.block-42__li-link {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none !important;
+}
+
+.block-42__li-link:hover {
+  color: red;
+}
+
+.block-41__row {
+  margin-top: 15px;
+}
+
+.contact-icons {
+  color: #ffffff;
+}
+
+.block-42__li-body {
+  padding-top: 20px;
+}
+
+.block-42__li-p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.block-42__li-explore {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 25px;
 }
