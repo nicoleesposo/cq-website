@@ -1,3 +1,5 @@
+$('body').scrollspy();
+
 var showDropdown = function (e) {
     e.currentTarget.classList.add("hero-nav__item--show-dropdown");
   },
@@ -22,7 +24,8 @@ function setupDropdowns(n) {
           e.addEventListener("mouseenter", showDropdown),
           e.addEventListener("mouseleave", hideDropdown),
           e
-            .querySelector(".hero-nav__link")
+            // .querySelector(".hero-nav__link")
+            .querySelector(".nav-link")
             .removeEventListener("click", toggleDropdown))
         : (e.removeEventListener("mouseenter", showDropdown),
           e.removeEventListener("mouseleave", hideDropdown),
