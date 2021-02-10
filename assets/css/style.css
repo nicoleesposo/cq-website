@@ -475,6 +475,14 @@ button:focus {
   color: var(--primary-invert);
 }
 
+.hero__title {
+  display: flex;
+}
+
+.hero__title-exclamation {
+  height: 7vh;
+}
+
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
