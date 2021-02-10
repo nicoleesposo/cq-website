@@ -1647,12 +1647,12 @@ ul.nav--lg-side {
 }
 
 #footer p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
 }
 
 #footer .copyright {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 ::-webkit-scrollbar {
@@ -1767,7 +1767,7 @@ span.fas {
 }
 
 .block-42__li-link {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   font-weight: 400;
   text-decoration: none !important;
@@ -1777,9 +1777,6 @@ span.fas {
   color: red;
 }
 
-.block-41__row {
-  margin-top: 15px;
-}
 
 .contact-icons {
   color: #ffffff;
@@ -1791,13 +1788,13 @@ span.fas {
 
 .block-42__li-p {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .block-42__li-explore {
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
