@@ -63,7 +63,7 @@ function closeMenuAndGoTo(o) {
   }, 250);
 }
 (document.querySelector("[close-nav-menu]").onclick = function (e) {
-  heroMenu.classList.toggle("xft-menu--js-show"),
+  heroMenu.classList.toggle("ft-menu--js-show"),
     bodyScrollLock.unlock(heroMenu);
 }),
   (document.querySelector("[open-nav-menu]").onclick = function (e) {

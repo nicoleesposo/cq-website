@@ -53,13 +53,12 @@ button:focus {
   transition: 0.2s all;
 }
 
-
-
 .btn,
 .btn:hover,
 .btn:focus {
   border: none;
   box-shadow: none;
+  outline: none;
 }
 
 .btn:hover,
