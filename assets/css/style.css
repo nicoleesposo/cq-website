@@ -2010,6 +2010,10 @@ span.fas {
   .active__nav-a {
     font-size: 20px
   }
+
+  .hero__empty-column {
+    display: none;
+  }
   
 }
 
