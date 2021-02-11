@@ -63,7 +63,7 @@ function closeMenuAndGoTo(o) {
   }, 250);
 }
 (document.querySelector("[close-nav-menu]").onclick = function (e) {
-  heroMenu.classList.toggle("ft-menu--js-show"),
+  heroMenu.classList.toggle("xft-menu--js-show"),
     bodyScrollLock.unlock(heroMenu);
 }),
   (document.querySelector("[open-nav-menu]").onclick = function (e) {
@@ -79,6 +79,7 @@ function closeMenuAndGoTo(o) {
         e.preventDefault(), closeMenuAndGoTo(o.getAttribute("href"));
       };
     });
+
 var nav = document.querySelector(".hero-nav");
 window.onscroll = function (e) {
   var o = document.querySelector("[change-src-onscroll]");
