@@ -96,3 +96,18 @@ window.onscroll = function (e) {
         o.setAttribute("change-src-onscroll", logoSrc)),
       nav.classList.remove("hero-nav--is-sticky"));
 };
+
+
+$(function() {
+  var heroLogo = $(".hero-nav__logo ");
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 200) {
+        heroLogo.removeClass('hero-nav__logo').addClass("hero-nav__logo-alt");
+      } else {
+        heroLogo.removeClass("hero-nav__logo-alt").addClass('hero-nav__logo');
+          console.log("working")
+      }
+  });
+});
