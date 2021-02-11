@@ -1,4 +1,3 @@
-$('body').scrollspy();
 
 var showDropdown = function (e) {
     e.currentTarget.classList.add("hero-nav__item--show-dropdown");
