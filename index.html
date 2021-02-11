@@ -34,42 +34,31 @@
     <!------------------------------>
     <header class="hero container-fluid">
       <div class="fixed-nav-container">
+        
+        <!-- nav-bar -->
         <nav id="nav" class="hero-nav position-relative container-fluid mx-auto px-0">
-          <div class="col-lg-10 mx-auto">
+          <div class="col-12 col-xl-10 mx-auto" >
             <ul class="nav w-100 list-unstyled align-items-center p-0">
               <li class="hero-nav__item hero-logo">
-                <a href="/"
-                  ><img
-                    class="hero-nav__logo"
-                    src="assets/img/cq-logo-no-padding.png"
-                    change-src-onscroll="assets/img/cq-logo.png"
-                    alt="cq logo" /></a
+                <a href="/"><img class="hero-nav__logo" src="assets/img/cq-logo-no-padding.png" change-src-onscroll="assets/img/cq-logo.png" alt="cq logo" /></a
                 ><!-- Don't remove this empty span --><span class="mx-2"></span>
               </li>
-
-              <li
-                id="hero-menu"
-                class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu"
-              >
-                <ul
-                  class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0"
-                >
+              <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu" >
+                <ul class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
                   <li class="flex-grow-1">
-                    <ul
-                      class="nav nav--lg-side flex-column-reverse flex-lg-row-reverse list-unstyled align-items-center p-0"
-                    >
+                    <ul class="nav nav--lg-side flex-column-reverse flex-lg-row-reverse list-unstyled align-items-center p-0 active__nav-ul" >
                       <!-- hero-nav__link -->
-                      <li class="hero-nav__item">
-                        <a href="#contact" class="nav-link">Contact Us</a>
+                      <li class="hero-nav__item active__nav-li">
+                        <a href="#contact" class="nav-link active__nav-a">Contact Us</a>
                       </li>
-                      <li class="hero-nav__item">
-                        <a href="#our-works" class="nav-link">Our Works</a>
+                      <li class="hero-nav__item active__nav-li">
+                        <a href="#our-works" class="nav-link active__nav-a">Our Works</a>
                       </li>
-                      <li class="hero-nav__item">
-                        <a href="#who-we-are" class="nav-link">Who We Are</a>
+                      <li class="hero-nav__item active__nav-li">
+                        <a href="#who-we-are" class="nav-link active__nav-a">Who We Are</a>
                       </li>
-                      <li class="hero-nav__item">
-                        <a href="#what-we-do" class="nav-link">What We Do</a>
+                      <li class="hero-nav__item active__nav-li">
+                        <a href="#what-we-do" class="nav-link active__nav-a">What We Do</a>
                       </li>
                     </ul>
                   </li>
@@ -96,42 +85,43 @@
                   </svg>
                 </button>
               </li>
-              <li
-                class="hero-nav__item d-lg-none d-flex flex-row-reverse menu-bars"
-              >
+              <li class="hero-nav__item d-lg-none d-flex flex-row-reverse menu-bars" >
                 <button open-nav-menu="" class="text-center px-2">
-                  <i class="fas fa-bars"></i>
+                  <i class="fas fa-bars bars fa-2x"></i>
                 </button>
               </li>
             </ul>
           </div>
         </nav>
+
+
       </div>
       <div class="hero__content container-fluid mx-auto">
         <!-- I'm putting the nav inside this "fixed-nav-container" to fix some issues happens on scroll -->
-        <div class="hero__body col-lg-5 offset-lg-1">
-
-          <img class="hero__title-exclamation" src="./assets/img/exclamation.svg" alt="!" />
-          <p class="hero__paragraph">
-            We are a full-service events and marketing solutions team dedicated
-            to deliver client’s core needs.
-          </p>
-          <p class="hero__paragraph mb-5">
-            As we face this new normal, let us tell your story beyond events and
-            recreate amazing human experiences to make your brand relevant.
-          </p>
-          <div class="hero__btns-container">
-            <a
-              class="hero__btn btn btn-primary mb-2 mb-lg-0 mx-1 mx-lg-2"
-              href="#!"
-              ><strong>Let's work together</strong></a
-            >
+        <div class="hero__body col-lg-5 offset-md-1">
+          <div>
+            <img class="hero__title-exclamation" src="./assets/img/exclamation.svg" alt="!" />
+            <p class="hero__paragraph">
+              We are a full-service events and marketing solutions team dedicated
+              to deliver client’s core needs.
+            </p>
+            <p class="hero__paragraph mb-5">
+              As we face this new normal, let us tell your story beyond events and
+              recreate amazing human experiences to make your brand relevant.
+            </p>
+            <div class="hero__btns-container">
+              <a
+                class="hero__btn btn btn-primary mb-2 mb-lg-0 mx-1 mx-lg-2"
+                href="#!"
+                ><strong>Let's work together</strong></a
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="hero__row d-block d-lg-flex row">
-        <div class="hero__empty-column col-lg-6"></div>
-        <div class="hero__image-column col-lg-6">
+      <div class="hero__row d-lg-flex row">
+        <!-- <div class="hero__empty-column col-lg-6"></div> -->
+        <div class="hero__image-column col-lg-6 offset-lg-6">
           <!-- <img src="assets/img/hero-img.png" alt="" class="hero-image" /> -->
         </div>
       </div>
@@ -143,7 +133,7 @@
     <div class="block-31 section-padding" id="what-we-do">
       <div class="container">
         <div class="row px-2 flex-column-reverse flex-lg-row-reverse">
-          <div class="col-lg-6 p-5">
+          <div class="col-lg-6 col-padding block__31-padding ">
             <h1 class="block__title mb-3">What we do<span>.</span></h1>
             <p class="block__paragraph mb-0">
               Our service spans from creative ideas to innovative execution and
@@ -287,76 +277,78 @@
     <div class="block-31">
       <div class="block-31__row d-block d-lg-flex row flex-row-reverse">
         <div class="block-31__image-column container col-lg-6 pl-0">
-          <div class="cq-slider-bg">
-            <div class="cq-red-box"></div>
-          </div>
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide carousel-right"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block w-100"
-                  src="https://images.unsplash.com/photo-1559223607-180d0c16c333?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                  alt="First slide"
-                />
-              </div>
-              <!-- <div class="carousel-item">
-                <img
-                  class="d-block w-100"
-                  src="https://images.unsplash.com/photo-1551731409-43eb3e517a1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80"
-                  alt="Second slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100"
-                  src="https://images.unsplash.com/photo-1550305080-4e029753abcf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
-                  alt="Third slide"
-                />
-              </div> -->
+          <div>
+            <div class="cq-slider-bg">
+              <div class="cq-red-box"></div>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide carousel-right"
+              data-ride="carousel"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="https://images.unsplash.com/photo-1559223607-180d0c16c333?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="https://images.unsplash.com/photo-1551731409-43eb3e517a1a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="https://images.unsplash.com/photo-1550305080-4e029753abcf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -906,7 +898,7 @@
                 </ul>
               </div>
               <!-- footer right col-4 -->
-              <div class="col-8 col-xs-12 col-sm-8 col-md-8 col-lg-4 col-xl-4 mb-sm-4 mb-lg-0">
+              <div class="col-8 col-sm-8 col-md-8 col-lg-4 col-xl-4 mb-sm-4 mb-lg-0">
                 <ul class="block-42__links-list list-unstyled p-0">
                   <li class="block-42__li-heading">Get in touch</li>
                   <li class="d-flex block-42__li-body">
@@ -1014,7 +1006,7 @@
                     <div class="col-lg-12 my-4">
                       <ul>
                         <li class="text-center modal-text-bullet">
-                          <h2 class="text-white">Dell Technologies - Retail Banking Innovations Philippines Summit</h2>
+                          <h2 class="text-white modal__text-h2">Dell Technologies - Retail Banking Innovations Philippines Summit</h2>
                         </li>
                       </ul>
                     </div>
@@ -1091,7 +1083,7 @@
                     </div>
                     <div class="col-lg-12 my-4">
                       <li class="text-center modal-text-bullet">
-                        <h2 class="text-white">Dell Technologies - Digitally Transforming Cities for the Future</h2>
+                        <h2 class="text-white modal__text-h2">Dell Technologies - Digitally Transforming Cities for the Future</h2>
                       </li>
                     </div>
                   </div>
@@ -1167,7 +1159,7 @@
                     </div>
                     <div class="col-lg-12 my-4">
                       <li class="text-center modal-text-bullet">
-                        <h2 class="text-white">Dell EMC & Dimension Data HyperConverged</h2>
+                        <h2 class="text-white modal__text-h2">Dell EMC & Dimension Data HyperConverged</h2>
                       </li>
                     </div>
                   </div>
@@ -1243,7 +1235,7 @@
                     </div>
                     <div class="col-lg-12 my-4">
                       <li class="text-center modal-text-bullet">
-                        <h2 class="text-white">Nutanix - Ayala ICT Summit</h2>
+                        <h2 class="text-white modal__text-h2">Nutanix - Ayala ICT Summit</h2>
                       </li>
                     </div>
                   </div>
@@ -1319,7 +1311,7 @@
                     </div>
                     <div class="col-lg-12 my-4">
                       <li class="text-center modal-text-bullet">
-                        <h2 class="text-white">Nutanix - Digital Transformation Asia</h2>
+                        <h2 class="text-white modal__text-h2">Nutanix - Digital Transformation Asia</h2>
                       </li>
                     </div>
                   </div>
@@ -1395,7 +1387,7 @@
                     </div>
                     <div class="col-lg-12 my-4">
                       <li class="text-center modal-text-bullet">
-                        <h2 class="text-white">Nutanix - Next on Tour</h2>
+                        <h2 class="text-white modal__text-h2">Nutanix - Next on Tour</h2>
                       </li>
                     </div>
                   </div>
